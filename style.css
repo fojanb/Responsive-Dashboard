@@ -1,0 +1,24 @@
+/* Custome Properties -- CSS Variables*/
+:root {
+  --main-color: #6d6875;
+  --color-dark: #b5838d;
+  --text-grey: #e5989b;
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--ff-primary);
+}
+.sidebar {
+  width: 345px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--color-dark);
+}

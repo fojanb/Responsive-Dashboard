@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Custome Properties -- CSS Variables*/
 :root {
-  --main-color: #6d6875;
-  --color-dark: #b5838d;
+  --main-color: #669bbc;
+  --clr-title: #fdf0d5;
+  --color-dark: #003049;
   --text-grey: #e5989b;
-  --ff-primary: "Source Sans Pro", sans-serif;
-  --ff-secondary: "Source Code Pro", monospace;
+  --ff-primary: 'Poppins', sans-serif;;
 }
 * {
   padding: 0;
@@ -21,4 +22,37 @@
   top: 0;
   height: 100%;
   background-color: var(--color-dark);
+}
+.sidebar-brand {
+  height: 90px;
+  padding: 1rem 0 1rem 2rem;
+  color: var(--clr-title);
+}
+.sidebar-brand span {
+  display: inline-block;
+  padding-right: 1rem;
+}
+.sidebar-menu li {
+  width: 100%;
+  margin-bottom: 1.7rem;
+  padding-left: 2rem;
+}
+.sidebar-menu a {
+  display: block;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  color: var(--main-color);
+}
+.sidebar-menu a.active {
+  background-color: var(--clr-title);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--color-dark);
+}
+.sidebar-menu a span:first-child {
+  font-size: 1.5rem;
+  padding-right: 1rem;
+}
+.main-content {
+  margin-left: 345px;
 }

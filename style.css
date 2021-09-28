@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Custome Properties -- CSS Variables*/
 :root {
-  --clr-title: #8681e5;
+  --clr-light-purple: #b2b7d7;
+  --clr-medium-purple: #8681e5;
+  --clr-dark-blue: #262c46;
+  --clr-darker-blue: #10153b;
   --color-accent: #fff;
-  --clr-bg: #262c46;
-  --text-grey: rgb(150, 148, 148);
   --ff-primary: "Poppins", sans-serif;
 }
 * {
@@ -15,8 +16,8 @@
   text-decoration: none;
   font-family: var(--ff-primary);
 }
-body{
-    background-color: var(--clr-bg);
+body {
+  background-color: var(--clr-dark-blue);
 }
 .sidebar {
   width: 345px;
@@ -24,13 +25,13 @@ body{
   left: 0;
   top: 0;
   height: 100%;
-  background-color: #10153b;
+  background-color: var(--clr-darker-blue);
   z-index: 100;
 }
 .sidebar-brand {
   height: 90px;
   padding: 1rem 0 1rem 2rem;
-  color: var(--clr-title);
+  color: var(--clr-medium-purple);
 }
 .sidebar-brand span {
   display: inline-block;
@@ -48,13 +49,13 @@ body{
   display: block;
   padding-left: 1rem;
   font-size: 1.1rem;
-  color: #b2b7d7;
+  color: var(--clr-light-purple);
 }
 .sidebar-menu a.active {
-  background-color: var(--clr-title);
+  background-color: var(--clr-medium-purple);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--color-accent);
+  color: var(--clr-darker-blue);
   border-radius: 30px 0px 0px 30px;
 }
 .sidebar-menu a span:first-child {
@@ -69,22 +70,23 @@ header {
   justify-content: space-between;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  background-color:#10153b;
+  background-color: var(--clr-darker-blue);
   /* position: fixed;
   left: 345px;
   width: calc(100%-345px);
   top: 0;
   z-index: 100; */
 }
-header h2,h4 {
-  color: #fff;
+header h2,
+h4 {
+  color: var(--clr-light-purple);
 }
 header label span {
   font-size: 1.7rem;
   padding-right: 1rem;
 }
 .search-wrapper {
-  border: 1px solid var(--clr-title);
+  border: 1px solid var(--clr-medium-purple);
   border-radius: 30px;
   height: 50px;
   display: flex;
@@ -95,12 +97,14 @@ header label span {
   display: inline-block;
   padding: 0rem 1rem;
   font-size: 1.2rem;
+  color: var(--clr-light-purple);
 }
 .search-wrapper input {
   height: 100%;
   padding: 0.5rem;
   border: none;
   outline: none;
+  background-color: var(--clr-darker-blue);
 }
 .user-wrapper {
   display: flex;
@@ -113,12 +117,12 @@ header label span {
 
 .user-wrapper small {
   display: inline-block;
-  color: var(--text-grey);
+  color: var(--clr-light-purple);
 }
 main {
   margin-top: 10px;
   padding: 2rem 1.5rem;
-  background-color: var(--clr-bg);
+  background-color: var(--clr-dark-blue);
   min-height: calc(100vh-90px);
 }
 .cards {
@@ -130,25 +134,26 @@ main {
 .card {
   display: flex;
   justify-content: space-between;
-  background-color: #10153b;
+  background-color: var(--clr-darker-blue);
   padding: 2rem;
   border-radius: 8px;
-  color: var(--clr-title);
+  color: var(--clr-medium-purple);
 }
 .card div:last-child span {
   font-size: 3rem;
-  color: var(--color-accent);
 }
 .card div:first-child span {
-  color: var(--text-grey);
+  color: var(--clr-light-purple);
+}
+.card div:first-child h1 {
+  color: #fff;
 }
 
 .card:last-child {
-  background-color: var(--clr-title);
+  background-color: var(--clr-medium-purple);
 }
-.card:last-child div:last-child span {
-  color:#10153b;
-}
-.card:last-child div:first-child span {
-  color:#10153b;
+.card:last-child div:last-child span,
+.card:last-child div:first-child span,
+.card:last-child div:first-child h1 {
+  color: var(--clr-darker-blue);
 }

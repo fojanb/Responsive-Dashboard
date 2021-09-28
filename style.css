@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Custome Properties -- CSS Variables*/
 :root {
-  --main-color: #669bbc;
-  --clr-title: #fdf0d5;
-  --color-dark: #003049;
+  --clr-title: #fff;
+  --color-accent: #59d49b;
   --text-grey: rgb(150, 148, 148);
   --ff-primary: "Poppins", sans-serif;
 }
@@ -21,7 +20,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  background-color: var(--color-dark);
+  background-color: var(--color-accent);
   z-index: 100;
 }
 .sidebar-brand {
@@ -45,13 +44,13 @@
   display: block;
   padding-left: 1rem;
   font-size: 1.1rem;
-  color: var(--main-color);
+  color: var(--clr-title);
 }
 .sidebar-menu a.active {
   background-color: var(--clr-title);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--color-dark);
+  color: var(--color-accent);
   border-radius: 30px 0px 0px 30px;
 }
 .sidebar-menu a span:first-child {
@@ -80,7 +79,7 @@ header label span {
   padding-right: 1rem;
 }
 .search-wrapper {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--clr-title);
   border-radius: 30px;
   height: 50px;
   display: flex;
@@ -130,13 +129,19 @@ main {
   padding: 2rem;
   border-radius: 2px;
 }
-.card span:last-child{
-    color: var(--text-grey);
-
-
+.card div:last-child span {
+  font-size: 3rem;
+  color: var(--color-accent);
 }
-.card span:first-child {
-    font-size: 3rem;
-
+.card div:first-child span {
+  color: var(--text-grey);
 }
-
+.card:last-child{
+  background-color: var(--color-accent);
+}
+.card:last-child div:last-child span {
+  color: var(--clr-title);
+}
+.card:last-child div:first-child span {
+    color: var(--clr-title);
+}

@@ -162,6 +162,7 @@ main {
   padding: 2rem;
   border-radius: 5px;
   color: var(--clr-medium-purple);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .card div:last-child span {
   font-size: 3rem;
@@ -187,10 +188,13 @@ main {
   grid-template-columns: 65% auto;
   color: var(--clr-light-purple);
   grid-gap: 2rem;
+
 }
 .projects-card {
   background-color: var(--clr-darker-blue);
   border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
 }
 .projects-card-header {
   padding: 1rem;
@@ -216,6 +220,7 @@ main {
 table {
   border-collapse: collapse;
   color: var(--clr-light-purple);
+
 }
 
 thead tr {
@@ -255,6 +260,8 @@ tr td:last-child {
 .customer {
   background-color: var(--clr-darker-blue);
   border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
 }
 .customer-card-body {
   display: flex;

@@ -58,7 +58,7 @@ body {
   background-color: var(--clr-medium-purple);
   padding-top: 1rem;
   padding-bottom: 1rem;
-  color: var(--clr-darker-blue);
+  color: #fff;
   border-radius: 30px 0px 0px 30px;
 }
 .sidebar-menu a span:first-child {
@@ -149,7 +149,7 @@ main {
   color: var(--clr-light-purple);
 }
 .card div:first-child h1 {
-  color: var(--color-accent);
+  color: var(--clr-light-purple);
 }
 
 .card:last-child {
@@ -158,7 +158,7 @@ main {
 .card:last-child div:last-child span,
 .card:last-child div:first-child span,
 .card:last-child div:first-child h1 {
-  color: var(--clr-darker-blue);
+  color: #fff;
 }
 table,
 .recent-grid h3 {

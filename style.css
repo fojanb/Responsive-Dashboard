@@ -55,7 +55,7 @@ body {
   color: var(--clr-light-purple);
 }
 .sidebar-menu a.active {
-  background-color: var(--clr-medium-purple);
+  background-color: var(--clr-dark-blue);
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: var(--clr-white);

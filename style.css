@@ -65,6 +65,13 @@ body {
   font-size: 1.5rem;
   padding-right: 1rem;
 }
+#nav-toggle:checked + .sidebar {
+  width: 80px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
+#nav-toggle:checked + .sidebar li a span:last-child {
+  display: none;
+}
 .main-content {
   margin-left: 345px;
 }
@@ -80,6 +87,10 @@ header {
   top: 0;
   z-index: 100; */
 }
+#nav-toggle {
+  display: none;
+}
+
 header h2,
 h4 {
   color: var(--clr-light-purple);
@@ -163,7 +174,7 @@ main {
 .recent-grid {
   margin-top: 3.5rem;
   display: grid;
-  grid-template-columns: 67% auto;
+  grid-template-columns: 65% auto;
   color: var(--clr-light-purple);
   grid-gap: 2rem;
 }
@@ -196,10 +207,7 @@ table {
   border-collapse: collapse;
   color: var(--clr-light-purple);
 }
-/* table tr {
-  border-top: 1px solid var(--clr-medium-purple);
-  border-bottom: 1px solid var(--clr-medium-purple);
-} */
+
 thead tr {
   border-bottom: 1px solid var(--clr-dark-blue);
 }
@@ -242,8 +250,8 @@ tr td:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+  /* margin-top: 1rem; */
+  padding: 0.7rem 1rem;
 }
 .customer-card {
   display: flex;
@@ -268,4 +276,10 @@ tr td:last-child {
 .info small {
   font-weight: 200;
   color: var(--clr-grey);
+}
+.contact span {
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: var(--clr-medium-purple);
 }

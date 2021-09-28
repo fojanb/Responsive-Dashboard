@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Custome Properties -- CSS Variables*/
 :root {
-  --clr-title: #fff;
-  --color-accent: #59d49b;
+  --clr-title: #8681e5;
+  --color-accent: #fff;
+  --clr-bg: #262c46;
   --text-grey: rgb(150, 148, 148);
   --ff-primary: "Poppins", sans-serif;
 }
@@ -14,13 +15,16 @@
   text-decoration: none;
   font-family: var(--ff-primary);
 }
+body{
+    background-color: var(--clr-bg);
+}
 .sidebar {
   width: 345px;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
-  background-color: var(--color-accent);
+  background-color: #10153b;
   z-index: 100;
 }
 .sidebar-brand {
@@ -44,7 +48,7 @@
   display: block;
   padding-left: 1rem;
   font-size: 1.1rem;
-  color: var(--clr-title);
+  color: #b2b7d7;
 }
 .sidebar-menu a.active {
   background-color: var(--clr-title);
@@ -65,14 +69,15 @@ header {
   justify-content: space-between;
   padding: 1rem 1.5rem;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-color:#10153b;
   /* position: fixed;
   left: 345px;
   width: calc(100%-345px);
   top: 0;
   z-index: 100; */
 }
-header h2 {
-  color: #222;
+header h2,h4 {
+  color: #fff;
 }
 header label span {
   font-size: 1.7rem;
@@ -113,7 +118,7 @@ header label span {
 main {
   margin-top: 10px;
   padding: 2rem 1.5rem;
-  background-color: #f1f5f9;
+  background-color: var(--clr-bg);
   min-height: calc(100vh-90px);
 }
 .cards {
@@ -125,9 +130,10 @@ main {
 .card {
   display: flex;
   justify-content: space-between;
-  background-color: #fff;
+  background-color: #10153b;
   padding: 2rem;
-  border-radius: 2px;
+  border-radius: 8px;
+  color: var(--clr-title);
 }
 .card div:last-child span {
   font-size: 3rem;
@@ -136,12 +142,13 @@ main {
 .card div:first-child span {
   color: var(--text-grey);
 }
-.card:last-child{
-  background-color: var(--color-accent);
+
+.card:last-child {
+  background-color: var(--clr-title);
 }
 .card:last-child div:last-child span {
-  color: var(--clr-title);
+  color:#10153b;
 }
 .card:last-child div:first-child span {
-    color: var(--clr-title);
+  color:#10153b;
 }

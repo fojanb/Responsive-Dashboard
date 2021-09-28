@@ -33,7 +33,7 @@ body {
 }
 .sidebar-brand {
   height: 90px;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 0 1rem 3rem;
   color: var(--clr-medium-purple);
 }
 .sidebar-brand span {
@@ -65,13 +65,23 @@ body {
   font-size: 1.5rem;
   padding-right: 1rem;
 }
+/* -------------------------------- */
 #nav-toggle:checked + .sidebar {
   width: 80px;
+}
+#nav-toggle:checked + .sidebar .sidebar-brand,
+#nav-toggle:checked + .sidebar li {
+  padding-left: 1rem;
+  text-align: center;
+}
+#nav-toggle:checked + .sidebar li a {
+  padding-left: 0rem;
 }
 #nav-toggle:checked + .sidebar .sidebar-brand h2 span:last-child,
 #nav-toggle:checked + .sidebar li a span:last-child {
   display: none;
 }
+/* -------------------------------- */
 .main-content {
   margin-left: 345px;
 }

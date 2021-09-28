@@ -177,11 +177,7 @@ main {
   color: var(--clr-light-purple);
 }
 .card div:first-child h1 {
-  color: var(--clr-light-purple);
-  background-color: rgba(238, 9, 20, 0.1);
-  border-radius: 50%;
-  width: 40px;
-  box-shadow: var(--bs);
+  color: var(--clr-white);
 }
 .card:last-child {
   background-color: var(--clr-medium-purple);

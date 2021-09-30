@@ -312,3 +312,53 @@ tr td:last-child {
   color: var(--clr-medium-purple);
 }
 /* --------------------------------- */
+@media only screen and (max-width: 1200px) {
+  .sidebar {
+    width: 80px;
+  }
+  .sidebar .sidebar-brand,
+  .sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+  }
+  .sidebar li a {
+    padding-left: 0rem;
+  }
+  .sidebar .sidebar-brand h2 span:last-child,
+  .sidebar li a span:last-child {
+    display: none;
+  }
+ .main-content {
+    margin-left: 70px;
+  }
+  .main-content header {
+    width: calc(100%-70px);
+    left: 70px;
+  }
+}
+/* ##################### */
+@media only screen and (max-width: 960px) {
+  .cards{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .recent-grid{
+    grid-template-columns: 60% 40%;
+  }
+}
+/* ##################### */
+@media only screen and (max-width: 768px) {
+  .cards{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .recent-grid{
+    grid-template-columns:100%;
+  }
+  .search-wrapper{
+    display: none;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .cards{
+    grid-template-columns: 100%;
+  }
+}

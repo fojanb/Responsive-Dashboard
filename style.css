@@ -349,7 +349,7 @@ tr td:last-child {
   }
   .sidebar:hover .sidebar-brand h2 span:last-child,
   .sidebar:hover li a span:last-child {
-    display: none;
+    display: inline;
   }
 }
 /* ##################### */
@@ -363,6 +363,9 @@ tr td:last-child {
 }
 /* ##################### */
 @media only screen and (max-width: 768px) {
+  .sidebar{
+    left: -100% !important;
+  }
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -372,10 +375,24 @@ tr td:last-child {
   .search-wrapper {
     display: none;
   }
-  header {
-    padding: 1.5rem 1.5rem 2.85rem 1.5rem;
+  header h2 {
+    display: flex;
+    align-items: center;
+  }
+  
+  header h2 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--clr-medium-purple);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    
   }
 }
+/* ##################### */
 @media only screen and (max-width: 560px) {
   .cards {
     grid-template-columns: 100%;

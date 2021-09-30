@@ -9,7 +9,7 @@
   --clr-grey: #9190a0;
   --ff-primary: "Poppins", sans-serif;
   --bs: 0 0 50px rgba(82, 113, 255,0.5);
-  --bs-card : 0 0 50px rgba(92,225,230,0.4);
+  --bs-card : 0 0 50px rgba(92,225,230,0.3);
 }
 
 * {
@@ -99,7 +99,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
-  /* box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--clr-darker-blue);
   /* position: fixed;
   left: 345px;
@@ -173,7 +173,7 @@ main {
   padding: 2rem;
   border-radius: 5px;
   color: var(--clr-medium-purple);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .card div:last-child span {
   font-size: 3rem;
@@ -191,7 +191,7 @@ main {
 .card:last-child div:last-child span,
 .card:last-child div:first-child span,
 .card:last-child div:first-child h1 {
-  color: rgb(92, 90, 90);
+  color: rgb(56, 56, 56);
   box-shadow: none;
   background-color: inherit;
 }
@@ -205,7 +205,7 @@ main {
 .projects-card {
   background-color: var(--clr-darker-blue);
   border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .projects-card-header {
   padding: 1rem;
@@ -270,7 +270,7 @@ tr td:last-child {
 .customer {
   background-color: var(--clr-darker-blue);
   border-radius: 5px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .customer-card-body {
   display: flex;

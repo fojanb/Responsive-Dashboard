@@ -9,7 +9,6 @@
   --clr-grey: #9190a0;
   --ff-primary: "Poppins", sans-serif;
   --bs: 0 0 50px rgba(82, 113, 255,0.5);
-  --bs-brand: 2px 2px 8px rgba(136, 72, 196, 0.7);
   --bs-card : 0 0 50px rgba(92,225,230,0.4);
 }
 
@@ -38,9 +37,6 @@ body {
   height: 90px;
   padding: 1.6rem 0rem 0rem 3rem;
   color: var(--clr-medium-purple);
-}
-.sidebar-brand h2 {
-  text-shadow: var(--bs-brand);
 }
 .sidebar-brand span {
   display: inline-block;

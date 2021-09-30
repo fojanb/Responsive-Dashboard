@@ -2,14 +2,15 @@
 /* Custome Properties -- CSS Variables*/
 :root {
   --clr-light-purple: #b2b7d7;
-  --clr-medium-purple: #8681e5;
-  --clr-dark-blue: #262c46;
-  --clr-darker-blue: #10153b;
+  --clr-medium-purple: #5ce1e6;
+  --clr-dark-blue: #171a2b;
+  --clr-darker-blue: #070a1f;
   --clr-white: #fff;
   --clr-grey: #9190a0;
   --ff-primary: "Poppins", sans-serif;
-  --bs: 0 0 50px rgba(238, 9, 20, 0.5);
+  --bs: 0 0 50px rgba(82, 113, 255,0.5);
   --bs-brand: 2px 2px 8px rgba(136, 72, 196, 0.7);
+  --bs-card : 0 0 50px rgba(92,225,230,0.4);
 }
 
 * {
@@ -189,11 +190,12 @@ main {
 }
 .card:last-child {
   background-color: var(--clr-medium-purple);
+  box-shadow: var(--bs-card);
 }
 .card:last-child div:last-child span,
 .card:last-child div:first-child span,
 .card:last-child div:first-child h1 {
-  color: var(--clr-white);
+  color: rgb(92, 90, 90);
   box-shadow: none;
   background-color: inherit;
 }
@@ -220,7 +222,7 @@ main {
 }
 .projects-card-header button,
 .customer-card button {
-  background-color: #c43c3f;
+  background-color: #5271ff;
   border-radius: 10px;
   color: var(--clr-white);
   font-size: 0.8rem;
@@ -375,19 +377,16 @@ tr td:last-child {
   .search-wrapper {
     display: none;
   }
-    header {
+  header {
     width: 100% !important;
     left: 0 !important;
-
   }
   header h2 {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
     z-index: 200;
-
   }
-
   header h2 label {
     display: flex;
     justify-content: center;
@@ -399,17 +398,15 @@ tr td:last-child {
     border-radius: 50%;
     margin-right: 0.5rem;
   }
-
   .main-content {
     width: 100%;
     margin-left: 0rem;
   }
   #nav-toggle:checked + .sidebar {
     left: 0 !important;
-    /* z-index: 100; */
+    z-index: 100;
     width: 345px;
   }
-
   #nav-toggle:checked + .sidebar .sidebar-brand h2 span {
     color: var(--clr-darker-blue);
     text-shadow: none;

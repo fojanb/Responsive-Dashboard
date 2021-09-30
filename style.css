@@ -62,7 +62,7 @@ body {
 .sidebar-menu a.active {
   background-color: var(--clr-dark-blue);
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.1rem;
   color: var(--clr-white);
   border-radius: 30px 0px 0px 30px;
 }
@@ -328,7 +328,7 @@ tr td:last-child {
   .sidebar li a span:last-child {
     display: none;
   }
- .main-content {
+  .main-content {
     margin-left: 70px;
   }
   .main-content header {
@@ -337,7 +337,7 @@ tr td:last-child {
   }
   .sidebar:hover {
     width: 345px;
-    z-index:200;
+    z-index: 200;
   }
   .sidebar:hover .sidebar-brand,
   .sidebar:hover li {
@@ -354,32 +354,30 @@ tr td:last-child {
 }
 /* ##################### */
 @media only screen and (max-width: 960px) {
-  .cards{
-    grid-template-columns: repeat(3,1fr);
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
   }
-  .recent-grid{
+  .recent-grid {
     grid-template-columns: 60% 40%;
   }
 }
 /* ##################### */
 @media only screen and (max-width: 768px) {
-  .cards{
-    grid-template-columns: repeat(2,1fr);
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .recent-grid{
-    grid-template-columns:100%;
+  .recent-grid {
+    grid-template-columns: 100%;
   }
-  .search-wrapper{
+  .search-wrapper {
     display: none;
   }
-  header{
+  header {
     padding: 1.5rem 1.5rem 2.85rem 1.5rem;
-
-
   }
 }
 @media only screen and (max-width: 560px) {
-  .cards{
+  .cards {
     grid-template-columns: 100%;
   }
 }

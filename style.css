@@ -2,9 +2,9 @@
 /* Custome Properties -- CSS Variables*/
 :root {
   --clr-light-purple: #b2b7d7;
-  --clr-medium-purple: #5ce1e6;
-  --clr-dark-blue: #171a2b;
-  --clr-darker-blue: #070a1f;
+  --clr-medium-purple: #02c39a;
+  --clr-dark-blue: #1a012b;
+  --clr-darker-blue: #11001b;
   --clr-white: #fff;
   --clr-grey: #9190a0;
   --ff-primary: "Poppins", sans-serif;
@@ -218,7 +218,7 @@ main {
 }
 .projects-card-header button,
 .customer-card button {
-  background-color: #5271ff;
+  background-color: #8c3cb8;
   border-radius: 10px;
   color: var(--clr-white);
   font-size: 0.8rem;

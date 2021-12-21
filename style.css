@@ -2,14 +2,14 @@
 /* Custome Properties -- CSS Variables*/
 :root {
   --clr-light-purple: #b2b7d7;
-  --clr-medium-purple: #02c39a;
-  --clr-dark-blue: #1a012b;
-  --clr-darker-blue: #11001b;
-  --clr-white: #fff;
+  --clr-medium-purple: #0081a7;
+  --clr-dark-blue: #2d333b;
+  --clr-darker-blue: #22272e;
+  --clr-white: rgb(204, 202, 202);
   --clr-grey: #9190a0;
   --ff-primary: "Poppins", sans-serif;
   --bs: 0 0 50px rgba(82, 113, 255,0.5);
-  --bs-card : 0 0 50px rgba(92,225,230,0.3);
+  --bs-card : 0 0 50px rgba(75, 195, 199, 0.3);
 }
 
 * {
@@ -99,7 +99,6 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1.5rem 1.5rem 2rem 1.5rem;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   background-color: var(--clr-darker-blue);
   /* position: fixed;
   left: 345px;
@@ -191,7 +190,7 @@ main {
 .card:last-child div:last-child span,
 .card:last-child div:first-child span,
 .card:last-child div:first-child h1 {
-  color: rgb(56, 56, 56);
+  color: var(--clr-dark-blue);
   box-shadow: none;
   background-color: inherit;
 }
@@ -218,15 +217,15 @@ main {
 }
 .projects-card-header button,
 .customer-card button {
-  background-color: #8c3cb8;
+  background-color: var(--clr-medium-purple);
   border-radius: 10px;
-  color: var(--clr-white);
+  color: var(--clr-dark-blue);
   font-size: 0.8rem;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
   appearance: none;
-  box-shadow: var(--bs);
+  font-weight: bold;
 }
 table {
   border-collapse: collapse;
